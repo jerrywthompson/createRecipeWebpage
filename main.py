@@ -51,9 +51,18 @@ entryInstructions.focus_set()
 
 rowCnt += 1
 
+cmbNutritionFrame = ttk.LabelFrame(root, text="Nutrition:")
+cmbNutritionFrame.grid(row=rowCnt, column=0, columnspan=5, padx=5, pady=10, sticky='w')
+nutrition = tk.StringVar()
+entryNutrition = tk.scrolledtext.ScrolledText(cmbNutritionFrame, height=10, width= "95" )
+entryNutrition.grid(row=rowCnt, column=0, padx=5, pady=5, columnspan=10, sticky='w')
+entryNutrition.focus_set()
+
+rowCnt += 1
+
 
 btnCreate = tk.Button(root, text="Create Webpage", fg="blue",
-                   command=lambda: globalUtils.createWebPage(recipeName, recipeImage, entryIngredients, entryInstructions))
+                   command=lambda: globalUtils.createWebPage(recipeName, recipeImage, entryIngredients, entryInstructions,entryNutrition))
 btnCreate.grid(row=rowCnt, column=2, padx=5, pady=5)
 
 root.mainloop()
