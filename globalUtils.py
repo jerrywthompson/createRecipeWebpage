@@ -3,15 +3,9 @@ from tkinter import filedialog
 from tkinter import messagebox
 from string import Template
 import base64
-#
-# from PIL.Image import core as _imaging
-# import PIL
-# from PIL import Image
-# import PIL.Image
 import PIL
 from PIL import Image
-import os
-import glob
+from resizeimage import resizeimage
 
 
 def getRecipeImage(entRecipeImage):
@@ -31,6 +25,8 @@ def createWebPage(recipeName, recipeImage, ingredients, instructions, nutrition)
 
 
     updatedImage = resizeImage(recipeImageValue, recipeName)
+
+    updatedImage2 = resizeImage2(recipeImageValue, recipeName)
 
     base64Image = convertInageToBase64(updatedImage)
 
@@ -266,3 +262,12 @@ def resizeImage(recipeImage, recipeName):
     image = image.resize((base_width, hsize), PIL.Image.ANTIALIAS)
     image.save(imagePath)
     return imagePath
+
+
+def resizeImage2(recipeImage, recipeName):
+
+    fd_img = open(recipeImage, 'r')
+    img = Image.open(fd_img)
+    img = resizeimage.resize_thumbnail(img, [800, 800])
+    img.save('test-image-thumbnail.jpeg', img.format)
+    fd_img.close()
