@@ -18,17 +18,21 @@ def getRecipeImage(entRecipeImage):
 
 def createWebPage(recipeName, recipeImage, ingredients, instructions, nutrition):
     recipeNameValue = recipeName.get()
-    recipeImageValue = recipeImage.get()
+    recipeImagePath = recipeImage.get()
     ingredientsValue = ingredients.get("1.0", tk.END)
     instructionsValue = instructions.get("1.0", tk.END)
     nutritionValue = nutrition.get("1.0", tk.END)
 
 
-    updatedImage = resizeImage(recipeImageValue, recipeName)
+    # updatedImage = resizeImage(recipeImagePath, recipeNameValue)
 
-    updatedImage2 = resizeImage2(recipeImageValue, recipeName)
+    resizeDimension  = getResizeDimension(recipeImagePath)
 
-    base64Image = convertInageToBase64(updatedImage)
+    imageResized = resizeImage(recipeImagePath, resizeDimension, recipeNameValue)
+
+    # updatedImage2 = resizeImage2(recipeImagePath, recipeNameValue)
+
+    base64Image = convertInageToBase64(imageResized)
 
 
     formatedIngredients = formatList(ingredientsValue)
@@ -253,21 +257,63 @@ def findIndexFile(data):
 
     print(filedata)
 
-def resizeImage(recipeImage, recipeName):
-    base_width = 800
-    imagePath = "./images/" + str(recipeName) + ".jpg"
-    image = Image.open(recipeImage)
-    width_percent = (base_width / float(image.size[0]))
-    hsize = int((float(image.size[1]) * float(width_percent)))
-    image = image.resize((base_width, hsize), PIL.Image.ANTIALIAS)
-    image.save(imagePath)
-    return imagePath
+# def resizeImage(recipeImagePath, recipeName):
+#     base_width = 800
+#     newImagePath = "./images/" + str(recipeName) + ".jpg"
+#     image = Image.open(recipeImagePath)
+#     width_percent = (base_width / float(image.size[0]))
+#     hsize = int((float(image.size[1]) * float(width_percent)))
+#     image = image.resize((base_width, hsize), PIL.Image.ANTIALIAS)
+#     image.save(newImagePath)
+#     return newImagePath
+
+def getResizeDimension(recipeImagePath):
+
+    img = Image.open(recipeImagePath)
+
+    #image size
+    width = img.size[0]
+    height = img.size[1]
+
+    resizeDimension = {}
+
+    if width == height:
+        resizeDimension["top"] = 0
+        resizeDimension["bottom"] = height
+        resizeDimension['left'] = 0
+        resizeDimension['right'] = width
+        return resizeDimension
+
+    if width > height:
+        cropAmount = (width - height)/2
+        resizeDimension["top"] = 0
+        resizeDimension["bottom"] = height
+        resizeDimension['left'] = cropAmount
+        resizeDimension['right'] = width - cropAmount
+        return resizeDimension
+
+    if height > width:
+        cropAmount = (height - width) / 2
+        resizeDimension["top"] = cropAmount
+        resizeDimension["bottom"] = height - cropAmount
+        resizeDimension['left'] = 0
+        resizeDimension['right'] = width
+        return resizeDimension
 
 
-def resizeImage2(recipeImage, recipeName):
+def resizeImage(recipeImagePath, resizeDimension, recipeName):
+    newImagePath = "./images/" + str(recipeName) + ".jpg"
+    img = Image.open(recipeImagePath)
 
-    fd_img = open(recipeImage, 'r')
-    img = Image.open(fd_img)
-    img = resizeimage.resize_thumbnail(img, [800, 800])
-    img.save('test-image-thumbnail.jpeg', img.format)
-    fd_img.close()
+    left = resizeDimension['left']
+    top = resizeDimension['top']
+    right = resizeDimension['right']
+    bottom = resizeDimension['bottom']
+
+    imgResized = img.crop((left, top, right, bottom))
+
+    imgResized.show()
+
+    # imgResized.save('test-crop-image-' + recipeName + '.jpeg', img.format)
+    imgResized.save(newImagePath, img.format)
+    return newImagePath
