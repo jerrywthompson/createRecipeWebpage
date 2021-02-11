@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+.header { grid-area: header; }
+.image { grid-area: image; }
+.ingredients { grid-area: ingredients; }
+.instructions { grid-area: instructions; }
+.notes { grid-area: notes; }
+.nutrition { grid-area: nutrition; }
+.comments { grid-area: comments; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header image'
+    'ingredients instructions instructions instructions instructions instructions'
+    'notes instructions instructions instructions instructions instructions'
+    'nutrition comments comments comments comments comments';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="header">
+        <p>
+            <center><font color="blue" size="12"><b>Easy Keto Buns</b></font></center>
+        </p>
+    </div>
+    <div class="image">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wgARCAAyAGQDAREAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAwQBAgUA/8QAGgEAAgMBAQAAAAAAAAAAAAAAAgMBBAUABv/aAAwDAQACEAMQAAABYLBhTqkwhL5yh8wiyIlUG1RO1bQxCBE8gmJpCLSLykdjPz7p90aWc9/FYvo0ktcDV5bzoio4GlxAkFheVoOGUxPMcvUzYWZCVxm1ii/j3AWSx/SUFHHsZqLDGdfas02IUURcwXUeWZsjs4N0VmihqCaF0S4iQmwOXZsOAkow3m9maRm4arcckBobVxkfExCL6GHHFRF0fG7FAbYXTpgiz0MnM3Yjp7p6JkLiuRPum0D3TWZrM1kv/8QAIhAAAgICAgICAwAAAAAAAAAAAQIAAxESBBMQIRQgIiMx/9oACAEBAAEFAuuudSGdCzVcdaxkOVSa+GB3atZ1JOquZENgEDZlvI64L7BPkuZVdtA+wsvRItmzVWFjnwbR2fi73FlRlJGAsMrJBD5ltJsJDAcYqK/TQ5yABNmSV7XBk1j1Zg9wJ7LESqzYcrCp66qHbpZWY65tIEV7ale1jXbjqGZVtGcZqGEZ7GOuUV3rVP4grBZq8/rMXEPGEFVkPHsnxovHCg1WToZYa1mtf12M3abtMzZpk/T/xAAuEQACAQIEBQEHBQAAAAAAAAABAgADEQQSITEFEyJBUaEUFSAjUmFxEDJigZH/2gAIAQMBAT8B+ZaUadR+8alUBtpGw9fe0ZKqatKVNqguI2HqDcTllD1z5f7stx+ZycAtIVG0v9zGYZ+naWci4hNWU6LscrrKWFRZXqpS6b6wpzGzmGmp3goqNph2IbI20xdJLaywC5FEyWGs5GbaZE28eYKOmpAjswuqnSe0MjabTMKzXMuJv+jSo/MUBu0p9K7QEHWIxUkzKtUbQXQWteG95YGBCOlNZ1bPFNoYYBeGndc99oaap/c7zCqCD9pXYM5ImayzNA8WJo1hLx7CCO9qVvJgt5l9YrlTdDDppKvCqlultYnBjbqf0nuj+fpKnC7ah/SNXCnLeKwqHSDC1uy+ogwuI+mVTkvn0MpMXNrRMFWftb8z3ZW8iDhVTuw+FqSNuJ7NR+gf5MijYSwmRfEsPg//xAApEQABAwMDAwIHAAAAAAAAAAABAAIDBBESISIxBRRBUnEQExUgMkJR/9oACAECAQE/ATXtHlO6if1TOp+oLvxfhNq2vNgjWMa7Fykr4x+K73P8U18jtuVj7IS1LjiCoXPtvOqlqhGeV3rPUpI9bNTYiOQgxzjYKng22KDANEImA3sq2nbbKyAMb9pVPBLK75t0RYbuVU7WXTopH6g39k6MNNrqGjD4rvPsmUz2xZE6qnia2xPKB1+ATm3C7bElzQm1DI9hKFjquqCRzxbhbm8qzHAFxWWTQU4BwsVMYqfUlU9QJDYFB5XCzXPKrYCx+fgrpxkcbX2ryuosaJrqnYzC7wvGqClpopnZPUVFHHLm1NvlpwvdOAQaqphllDP4o2MY3EI6FSwxy2y8I6aBd+/y1d6/wF38n8C78+QmSkhSTxsF3lfUKbwUepQoVfzjsCM8LRdxTuoQ/qLodQHpX1A+n7eEdeViPhYKw+z/xAAnEAACAQMEAQQCAwAAAAAAAAAAARECITEQIjJBEiBRYZEDcYGhsf/aAAgBAQAGPwLBxOyNNsF8mDBHjSzgXpMFyzjSEpqZOS7M7i5DubePyNde+mCOpGh+NhOL6Y18kJXtk/3RwOMr+zynsTdMfJKQ3MR0WtpYjslcvcnsUm2o2EI8aWi6iqSXtbNpjSck1U2ZYa6Jbz8Gal/JhsxV9mGTBtoSN1UF/wAhmTbBeuP0jlX9Ga/TlnJnJ/emWZ9H/8QAJBABAAICAgEDBQEAAAAAAAAAAQARITFBUWFxgZEQobHh8PH/2gAIAQEAAT8hqnhSk8PRncs4D8QWSnkncGEGGkoNj1gKPYTEoX4hVofWfzWFN6Qz7gmQ5fSXsQaeJwFHMV8fjEq4wEK8UmIXvdG5zcrvhMdkaivOGKnKCpOB8MWoFy9GBvljGTpici/nE4uHTDDn1lgy5/MdYGvmEUDolXMJy3K0ZiBXoeo+cleYKGBh1zVj9IaA4xAKUi4JS1K5l+8sesAlYNw/fBNLzaPPkJHaoGNwVVO7vcZaA9JMby7zK7hC1pl5WnBa7RJppUExfSChyeoxV0JqAMOTiP0VZutTJXFXhSy0e4de52NXMHNGOvZW4zC/hYDHuE5ivRm+F9oTFZ+012SUPjSu58n8ZXiz7SpX0tgOvmh+wiu1gXbP9qeZ8xfoz//aAAwDAQACAAMAAAAQZU/R3xNJpXm2P6sWAUP9B2dex2h3SoYyQ0NNtz2PRi6mzX//xAAmEQEAAgEDAwQDAQEAAAAAAAABABEhMUFRYXGRgcHR8BChseHx/9oACAEDAQE/EHWceJZ8YFtlzB0BniEUnk+ZQy/WbMnf/ZYgx3/5BzVDFCH93fSplBRgyeBjFett616sLUodFx4N++kG0+0CYQuc/p43HeXlZ9f+Rs1n3t0jXlHH+Zx0/GgaMsxlzDimuhCq7yvmr+IddlXSp41/2+Ia675PTTb44jtvVP3Ckh7Y043x2Zmbp2t++mk0jS7KKrv204gCkvZDvKbQEWd3J93lqrVrzjfxz+GIRr44JSLjWHrKBkbZDHGeG/SEUZpKjrZ0bF9amIhumPf27TRGbnVHioImPVKCfyub36x8Bty1+6zOO0d71eLgs2fE3BBa7Sy6UviVFpseYnUq/XfrEbxSKlw2vkDxvA8lnm5jZj6gsYuiaLPUY/uPDC/wfJY0cYfXMfZjnL9PtFeStyVBW+PiMLF+nMWLj3T2uLmA6FLbjeq0gINWZ2nc+LhXjzvxFFi9F9yCy/xRMkb3BlLZ4HxDTB6R4IpqPEq2gEIM/8QAJhEBAAIBAQcFAQEAAAAAAAAAAQARITFBUWGBkcHwcaGx0eHxEP/aAAgBAgEBPxBBS/L8PmL09a+pYVkilldP2ZQdGLgeX97QG7cxl6Cp9L+4uWIXkJyrvGi7OB9TH27WkoLetQL6wcv4SgvenjulsWecusrXp5cC7HqdnvAq4JTGW+CrwvP3AynKOrTjpoVpm4nwm2Ok2N++y72S2CHX3c49Bxvw9JmgU0Yx3viQ0vg2FeekQDlqbumy4AggrNUJBiDB4PaV9bTFOOekSZ2OjMkMcVpe2K9YfneYhFPHzbBaCPtuiwrEiuoaxqppviZOl0+XAUVcVycxoSiDMNwtrAaVj8mSpDpModYUjVzscbIUXkNXCwqmN37LCYBo3QYchHSoQXcWiiaaQW9YJXSJtYmhwS1BoOUzUScPM+0TKMONsD19yDtHya+4RXFzBiejDeHKAaBeX3UAdLe1fSINH5sg0EHm+f0vyOxPX8lsv/KILonr/WA6BEJwpRslQgz/xAAlEAEAAgIBAwQDAQEAAAAAAAABABEhMUFRYXGBkcHRobHw4fH/2gAIAQEAAT8QeunS3MGoXm2X7uSCwEcrb7wAoL4ULKQDlV9QSwVmgAqJUV43OmLyMHmUX7WU89blRBaGOL6VFlDmD/U7T+O8AMm+830O/aBHM0WPrV14lBbEvJpO0Q88DIZIevaUA0DdxleGB3wgfpCUboDZ67lnb8DGYyIUyFr6iP1wHkh/MYtTYYa1isOf5jZgoXTKTkLwQjboczkN+IRjF5694s2dynDkIHgXZmrvz1iTBK2UGmbNbhwBu2GkiMomhiKSiqlZO5iP5N04prHHPMuPxThvrCxmTYFravpiZ3BnPF/WYASpWrcxKIeVN/mFkh03k+MwqGYDauktoTrA/wBVnFl/9h1m3XNG83NQ3K9l9cdqmSHV4Q4iguGAVdwFRKpoQ1/eJUSm0YEPmKgRW27YRpaC4a+6+JrIEKZ5/cUMbt4FX334lSNux7avfiZEnJZXtvB4iUiAZAZE9av/AGUf3SFKljQeh7wfUaK3D+QZe0qfjsRRqCnZ0L8TLRGyDs/MsQ7aXT45iXVULKTh9rvpGGO6gOKGs6lZdUWfwRvilJfJQblEtuz/ADBjocAH6itdVhufqWh15q/MUqu4E/NES+irLDSTZFryh18CfccUrV6684lptbobgv014qqERej2lOhDEA0vvMADwoVwPrgtGd0yzebzAigzs4qZXyojtfeK3ALon//Z"/>
+    </div>
+    <div class="ingredients">            <p>
+                <h1>
+                    <center>
+                        <b>
+                            Ingredients
+                        </b>
+                    </center>
+                </h1>
+            </p>
+            <ul>
+                <li>3 cups shredded cheese mozzarella cheese * See notes</li>
+				<li>2 oz cream cheese</li>
+				<li>1 3/4 cups almond flour</li>
+				<li>1 tbsp baking powder</li>
+				<li>2 large eggs</li>
+				<li>For the glaze and topping</li>
+				<li>1 large egg</li>
+				<li>1 tbsp sesame seeds optional</li>
+
+            </ul></div>
+    <div class="instructions">instructions</div>
+    <div class="notes">notes</div>
+    <div class="nutrition">nutrition</div>
+    <div class="comments">comments</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.header { grid-area: header; }
+.image { grid-area: image; }
+.ingredients { grid-area: ingredients; }
+.instructions { grid-area: instructions; }
+.notes { grid-area: notes; }
+.nutrition { grid-area: nutrition; }
+.comments { grid-area: comments; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header image image'
+    'ingredients instructions instructions instructions instructions instructions'
+    'notes instructions instructions instructions instructions instructions'
+    'nutrition comments comments comments comments comments';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Layout</h1>
+
+<p>This grid layout contains six columns and three rows:</p>
+
+<div class="grid-container">
+  <div class="header">Header</div>
+  <div class="image">image</div>
+  <div class="ingredients">ingredients</div>
+  <div class="instructions">instructions</div>
+  <div class="notes">notes</div>
+  <div class="nutrition">nutrition</div>
+  <div class="comments">comments</div>
+</div>
+
+</body>
+</html>

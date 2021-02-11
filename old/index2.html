@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <style>
+    * {
+       box-sizing: border-box;
+    }
+    h1 {
+       text-align: center;
+    }
+    .outer-grid {
+       display: flex;
+       flex-wrap: wrap;
+       padding: 0 4px;
+    }
+    .inner-grid {
+       flex: 25%;
+       max-width: 25%;
+       padding: 0 4px;
+    }
+    .inner-grid img {
+       margin-top: 8px;
+       width: 100%;
+       padding: 10px;
+       border: 5px solid blue;
+    }
+    @media screen and (max-width: 800px) {
+       .inner-grid {
+          flex: 50%;
+          max-width: 50%;
+       }
+    }
+    @media screen and (max-width: 600px) {
+       .inner-grid {
+          flex: 100%;
+          max-width: 100%;
+       }
+    }
+
+    </style>
+    <body>
+        <p>
+            <center><font size="7" color="#4000ff"><b>Recipes</b></font></center>
+        </p>
+        <hr class="rounded">
+        <div class="outer-grid">
+            <div class="inner-grid">
+                <p><font size="5" color="black"><b>Appetizers</b></font></p>
+                <a href="html/appetizers/index.html" alt="appetizers">
+                 <img src="images/appetizers.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500/">
+                </a>
+            </div>
+            <div class="inner-grid">
+                <p><font size="5" color="black"><b>Main Course</b></font></p>
+                <a href="html/main_course/index.html" alt="main_course">
+                 <img src="images/main_course.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500/">
+                </a>
+            </div>
+            <div class="inner-grid">
+                <p><font size="5" color="black"><b>Desserts</b></font></p>
+                <a href="html/desserts/index.html" alt="Desserts">
+                 <img src="images/desserts.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500/">
+                </a>
+            </div>
+            <div class="inner-grid">
+                <p><font size="5" color="black"><b>Cocktails</b></font></p>
+                <a href="html/cocktails/index.html" alt="cocktails">
+                 <img src="images/cocktails.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500/">
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
