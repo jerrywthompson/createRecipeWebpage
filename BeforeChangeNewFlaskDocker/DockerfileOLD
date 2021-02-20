@@ -1,0 +1,6 @@
+FROM python:latest
+
+COPY main.py ./createRecipeWebpage
+
+
+CMD ["python3", "/main.py", "-flag"]

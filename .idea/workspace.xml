@@ -1,91 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e26cc7b-5453-4f1a-9520-a75d7a4ef5b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build_process.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/html/main_course/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/html/old/newRecipeTemplate-responsive3.htm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/appetizers.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/cocktails.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/desserts.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/main_course.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/jim1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/jim10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/jim11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/jim12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/jim13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/jim15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/jim16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/jim17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/jim20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/jim21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/jim22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/jim3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/jim4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/jim5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/jim6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/jim7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/jim8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/jim9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/kadfa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/keto Rolls.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/larry10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/larry11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/larry12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/larry13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/larry14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/larry15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/larry16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/larry17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/larry18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/larry19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/larry2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/larry3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/larry4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/larry5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/larry6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/larry7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/larry8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/images/old/larry9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/createRecipeWebpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/createRecipeWebpage.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="3e26cc7b-5453-4f1a-9520-a75d7a4ef5b2" name="Default Changelist" comment="working maybe">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/BeforeChangeNewFlaskDocker/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CINNAMON ROLL FOR ONE .html" beforeDir="false" afterPath="$PROJECT_DIR$/old/images/old/CINNAMON ROLL FOR ONE .html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/STICKY CINNAMON ROLL BAKED OATMEAL.html" beforeDir="false" afterPath="$PROJECT_DIR$/old/images/old/STICKY CINNAMON ROLL BAKED OATMEAL.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bread_pudding.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/old/html/old/bread_pudding.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/globalUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/globalUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/90_second_keto_bread.html" beforeDir="false" afterPath="$PROJECT_DIR$/old/html/old/90_second_keto_bread.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Easy Keto Buns.html" beforeDir="false" afterPath="$PROJECT_DIR$/old/html/old/Easy Keto Buns.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/bread_pudding.html" beforeDir="false" afterPath="$PROJECT_DIR$/old/html/old/bread_pudding.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/carrot_cake.html" beforeDir="false" afterPath="$PROJECT_DIR$/old/html/old/carrot_cake.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/french_toast.html" beforeDir="false" afterPath="$PROJECT_DIR$/old/html/old/french_toast.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/keto Rolls.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/newRecipeTemplate-responsive.html" beforeDir="false" afterPath="$PROJECT_DIR$/old/html/old/newRecipeTemplate-responsive.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/newRecipeTemplate-responsive2.html" beforeDir="false" afterPath="$PROJECT_DIR$/old/html/old/newRecipeTemplate-responsive2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/newRecipeTemplate-responsive3.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/old/html/old/template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/template2.html" beforeDir="false" afterPath="$PROJECT_DIR$/old/html/old/template2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/90_second_keto_bread.webp" beforeDir="false" afterPath="$PROJECT_DIR$/old/images/old/90_second_keto_bread.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Creamy Brussel Sprout Casserole.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/old/images/old/Creamy Brussel Sprout Casserole.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/bread_pudding.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/old/images/old/bread_pudding.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/carrot_cake.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/old/images/old/carrot_cake.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/carrot_cake2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/old/images/old/carrot_cake2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/creme_anglaise.png" beforeDir="false" afterPath="$PROJECT_DIR$/old/images/old/creme_anglaise.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/french_toast.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/old/images/old/french_toast.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/keto Rolls.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/old/images/old/jim 19.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/old/html/main_course/Keto Rolls.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/old/images/old/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/old/images/old/indexMain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexOLD.html" beforeDir="false" afterPath="$PROJECT_DIR$/old/images/old/indexOLD.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexORIG.html" beforeDir="false" afterPath="$PROJECT_DIR$/old/images/old/indexORIG.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testRecipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/old/images/old/testRecipe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build_process.json" beforeDir="false" afterPath="$PROJECT_DIR$/BeforeChangeNewFlaskDocker/build_process.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/globalUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/BeforeChangeNewFlaskDocker/globalUtils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main" beforeDir="false" afterPath="$PROJECT_DIR$/BeforeChangeNewFlaskDocker/main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/BeforeChangeNewFlaskDocker/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +16,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
   </component>
   <component name="ProjectId" id="1oAVbOkm4GPSl0CvXxGAZzCydJr" />
   <component name="ProjectLevelVcsManager">
@@ -108,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/html/appetizers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -119,13 +44,14 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/BeforeChangeNewFlaskDocker" />
       <recent name="$PROJECT_DIR$/old" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/images/old" />
       <recent name="$PROJECT_DIR$/html/old" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="createRecipeWebpage" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,7 +64,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BeforeChangeNewFlaskDocker/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -147,9 +73,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="" />
+          <option name="buildCliOptions" value="" />
+          <option name="buildOnly" value="true" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="BeforeChangeNewFlaskDocker/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="Python.main" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Docker.Dockerfile" />
       </list>
     </recent_temporary>
   </component>
@@ -162,6 +108,14 @@
       <option name="presentableId" value="Default" />
       <updated>1612729452693</updated>
     </task>
+    <task id="LOCAL-00001" summary="working maybe">
+      <created>1613020681977</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613020681977</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,13 +128,18 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="working maybe" />
+    <option name="LAST_COMMIT_MESSAGE" value="working maybe" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/globalUtils.py</url>
-          <line>112</line>
+          <url>file://$PROJECT_DIR$/BeforeChangeNewFlaskDocker/globalUtils.py</url>
+          <line>166</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
